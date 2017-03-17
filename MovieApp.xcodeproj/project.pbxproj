@@ -22,7 +22,6 @@
 		9D7B45A41E72E4AE00082E60 /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7B45A31E72E4AE00082E60 /* MovieListView.swift */; };
 		9DCA2F8D1E7978830014EEBA /* MovieModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9DCA2F8B1E7978830014EEBA /* MovieModel.xcdatamodeld */; };
 		9DCA2F8F1E797B660014EEBA /* BookMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCA2F8E1E797B660014EEBA /* BookMarkView.swift */; };
-		9DCA2F911E797BDD0014EEBA /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCA2F901E797BDD0014EEBA /* AddTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +43,6 @@
 		9D7B45A31E72E4AE00082E60 /* MovieListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
 		9DCA2F8C1E7978830014EEBA /* MovieModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MovieModel.xcdatamodel; sourceTree = "<group>"; };
 		9DCA2F8E1E797B660014EEBA /* BookMarkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookMarkView.swift; sourceTree = "<group>"; };
-		9DCA2F901E797BDD0014EEBA /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +88,6 @@
 				9D183FD71E7685CC00FF844A /* VideoView.swift */,
 				9DCA2F8E1E797B660014EEBA /* BookMarkView.swift */,
 				9D7B45861E7275DF00082E60 /* Main.storyboard */,
-				9DCA2F901E797BDD0014EEBA /* AddTaskViewController.swift */,
 				9D7B458B1E7275DF00082E60 /* LaunchScreen.storyboard */,
 				9DCA2F8B1E7978830014EEBA /* MovieModel.xcdatamodeld */,
 				9D7B45801E7275DF00082E60 /* Products */,
@@ -184,7 +181,6 @@
 				9D7B45A41E72E4AE00082E60 /* MovieListView.swift in Sources */,
 				9DCA2F8D1E7978830014EEBA /* MovieModel.xcdatamodeld in Sources */,
 				9DCA2F8F1E797B660014EEBA /* BookMarkView.swift in Sources */,
-				9DCA2F911E797BDD0014EEBA /* AddTaskViewController.swift in Sources */,
 				9D183FD61E766D6000FF844A /* MovieInfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
