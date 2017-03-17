@@ -8,18 +8,45 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, FBSDKLoginButtonDelegate {
+    
+    var isLoggedIn :Bool = false
+    
+    let loginButton: FBSDKLoginButton = {
+        let button = FBSDKLoginButton()
+        button.readPermissions = ["email"]
+        button.publishPermissions = ["publish_actions"]
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        if((FBSDKAccessToken.current()) != nil){
+            isLoggedIn = true
+        }else {
+            view.addSubview(loginButton)
+            loginButton.center = view.center
+            loginButton.delegate = self
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if (isLoggedIn) {
+            performSegue(withIdentifier: "movieListView", sender: nil)
+        }
     }
-
+    
+    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
+        performSegue(withIdentifier: "movieListView", sender: nil)
+    }
+    
+    func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
+        
+    }
+    
+    func loginButtonWillLogin(_ loginButton: FBSDKLoginButton!) -> Bool {
+        return true
+    }
 
 }
 
